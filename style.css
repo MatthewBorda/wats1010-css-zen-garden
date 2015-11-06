@@ -8,27 +8,320 @@
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 
 
+/* Coolors Exported Palette - coolors.co/694c3f-b2405a-dbb34e-80bfbe-ffffe0 
+
+
+$color1: #694c3f; //rgba(105, 76, 63, 100)
+
+$color2: #b2405a; //rgba(178, 64, 90, 100)
+
+$color3: #dbb34e; //rgba(219, 179, 78, 100)
+
+$color4: #80bfbe; //rgba(128, 191, 190, 100)
+
+$color5: #ffffe0; //rgba(255, 255, 224, 100)
+*/
 /* basic elements */
 body {
 	width:auto;
+	max-width:1300px;
+	background:#ffffe0;
+	background: rgba(255, 255, 224, 100);
+	font-family: Rockwell;
+	border: 1px dashed #ddd;
+	box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ddd, 0 0 0 10px #fff, 0 0 2px 10px #eee;
+	color:#b2405a; 
+	color:rgba(178, 64, 90, 100);
+	margin:auto;
 	
-	}
+background:url("Purple.png");
+	z-index:-3;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
 
 
 
-h1,h2,h3 {
-	background:green;
-	margin:5px;
+/*Header ribbon modified from: http://www.bypeople.com/css3-white-dashed-ribbon/  */
+h1{
+	display: inline-block;
+	font-size: 18px;
+	line-height: 28px;
+	width:60%;
+	color: #b2405a;
+	text-shadow: 0 0 1px #758890;
+	margin: 10px 0;
+	padding: 14px 30px;
+	position: relative;
+	
+	/*A little shadow for 3d effect*/
+	/*Finally another shadow to negate some aspects of the :after element to complete the effect. This drops a shrinked shadow over the :after element with the same color like that of the background. The shadow is shrinked by the same offset amount = 18. And it is moved down by twice the offset amount to cover the entire height of the :after element*/
+	box-shadow: 
+		0 0 30px 0 rgba(0, 0, 0, 0.1), 
+		0 36px 0 -18px #ffffe0;
+}
+
+
+
+
+/*The ribbon ends*/
+h1:before {
+	content: '';
+	position: absolute;
+	top: 18px;
+	left: -15%;
+	z-index: -1;
+	width: 130%;
+	/*We will be using the triangle logic - 2 sided borders and 0 height. That will create negative triangles on the left and right*/
+	height: 0;
+	border: 28px solid rgba(0, 0, 0, 0);
+	border-left: 28px solid #ffffe0;
+	border-right: 28px solid #ffffe0;
+	/*Same color as the container which is the body in this case*/
+}
+
+/*The after pseudo element will negatve the bottom part of the ribbon completing the effect*/
+h1:after {
+	content: '';
+	width: 100%;
+	height: 0;
+	position: absolute;
+	top: 100%; left: 0;
+	z-index: -1;
+	/*The height of the top border is same as width of the left/right borders for the smoothest effect. The height of the top border is also the same as the offset the :before element has from the top*/
+	border-top: 18px solid #ffffe0;
+	border-left: 18px solid transparent;
+	border-right: 18px solid transparent;
+}
+
+h1, h1:before {
+	/*Some cool multi-background - we will use a combination of 4 backgrounds to create a cool effect*/
+	
+	background-image: 
+		/*yellow*/
+		
+		linear-gradient(
+			transparent 8%, 
+			yellow,
+			transparent 14%, 
+			transparent 86%, 
+			yellow,
+			transparent 92%
+		),
+	    
+		/*white base*/
+		linear-gradient(red,red);
+		
+		
+	background-size: 
+		cover, /*borders*/
+		cover, /*white gloss*/
+		4px 4px, /*thin stripes*/
+		cover; /*base white*/
+}
+
+h1, h1:before, h1:after {
+	box-sizing: border-box;
+	/*Fix to make the borders appear on the ribbon ends also*/
+	background-origin: border-box;
+}
+
+
+
+/*Header ribbon modified from: http://www.bypeople.com/css3-white-dashed-ribbon/  */
+h2{
+	display: inline-block;
+	font-size: 18px;
+	line-height: 28px;
+	color: #b2405a;
+	text-shadow: 0 0 1px #758890;
+	margin: 10px 0;
+
+	padding: 14px 30px;
+	position: relative;
+	
+	/*A little shadow for 3d effect*/
+	/*Finally another shadow to negate some aspects of the :after element to complete the effect. This drops a shrinked shadow over the :after element with the same color like that of the background. The shadow is shrinked by the same offset amount = 18. And it is moved down by twice the offset amount to cover the entire height of the :after element*/
+	box-shadow: 
+		0 0 30px 0 rgba(0, 0, 0, 0.1), 
+		0 36px 0 -18px #ffffe0;
+}
+
+
+
+
+/*The ribbon ends*/
+h2:before {
+	content: '';
+	position: absolute;
+	top: 18px;
+	left: -15%;
+	z-index: -1;
+	width: 130%;
+	/*We will be using the triangle logic - 2 sided borders and 0 height. That will create negative triangles on the left and right*/
+	height: 0;
+	border: 28px solid rgba(0, 0, 0, 0);
+	border-left: 28px solid #ffffe0;
+	border-right: 28px solid #ffffe0;
+	/*Same color as the container which is the body in this case*/
+}
+
+/*The after pseudo element will negatve the bottom part of the ribbon completing the effect*/
+h2:after {
+	content: '';
+	width: 100%;
+	height: 0;
+	position: absolute;
+	top: 100%; left: 0;
+	z-index: -1;
+	/*The height of the top border is same as width of the left/right borders for the smoothest effect. The height of the top border is also the same as the offset the :before element has from the top*/
+	border-top: 18px solid #ffffe0;
+	border-left: 18px solid transparent;
+	border-right: 18px solid transparent;
+}
+
+h2, h2:before {
+	/*Some cool multi-background - we will use a combination of 4 backgrounds to create a cool effect*/
+	background-image: 
+		/*2 grey borders*/
+		linear-gradient(
+			transparent 8%, 
+			rgba(0, 0, 0, 0.1) 8%, 
+			rgba(0, 0, 0, 0.1) 14%, 
+			transparent 14%, 
+			transparent 86%, 
+			rgba(0, 0, 0, 0.1) 86%, 
+			rgba(0, 0, 0, 0.1) 92%, 
+			transparent 92%
+		), 
+		/*white gloss gradient*/
+		linear-gradient(
+			rgba(255, 255, 255, 0.75), 
+			rgba(255, 255, 255, 0) 
+		), 
+		/*thin stripes*/
+		linear-gradient(
+			45deg, 
+			transparent 40%, 
+			rgba(0, 0, 0, 0.1) 40%, 
+			rgba(0, 0, 0, 0.1) 60%, 
+			transparent 60%
+		), 
+		/*white base*/
+		linear-gradient(white, white); 
+	background-size: 
+		cover, /*borders*/
+		cover, /*white gloss*/
+		4px 4px, /*thin stripes*/
+		cover; /*base white*/
+}
+
+h2, h2:before, h2:after {
+	box-sizing: border-box;
+	/*Fix to make the borders appear on the ribbon ends also*/
+	background-origin: border-box;
+}
+
+h3{
+	display: inline-block;
+	font-size: 18px;
+	line-height: 28px;
+	color: #b2405a;
+	text-shadow: 0 0 1px #758890;
+	margin: 10px 0;
+	width:80%;
+	padding: 14px 30px;
+	position: relative;
+	
+	/*A little shadow for 3d effect*/
+	/*Finally another shadow to negate some aspects of the :after element to complete the effect. This drops a shrinked shadow over the :after element with the same color like that of the background. The shadow is shrinked by the same offset amount = 18. And it is moved down by twice the offset amount to cover the entire height of the :after element*/
+	box-shadow: 
+		0 0 30px 0 rgba(0, 0, 0, 0.1), 
+		0 36px 0 -18px #ffffe0;
+	
+}	
+
+h3:before {
+	content: '';
+	position: absolute;
+	top: 18px;
+	left: -10%;
+	z-index: -1;
+	width: 120%;
+	/*We will be using the triangle logic - 2 sided borders and 0 height. That will create negative triangles on the left and right*/
+	height: 0;
+	border: 28px solid rgba(0, 0, 0, 0);
+	border-left: 28px solid #ffffe0;
+	border-right: 28px solid #ffffe0;
+	/*Same color as the container which is the body in this case*/
+}
+
+h3:after {
+	content: '';
+	width: 100%;
+	height: 0;
+	position: absolute;
+	top: 100%; left: 0;
+	z-index: -1;
+	/*The height of the top border is same as width of the left/right borders for the smoothest effect. The height of the top border is also the same as the offset the :before element has from the top*/
+	border-top: 18px solid #ffffe0;
+	border-left: 18px solid transparent;
+	border-right: 18px solid transparent;
+}
+
+h3, h3:before {
+	/*Some cool multi-background - we will use a combination of 4 backgrounds to create a cool effect*/
+	background-image: 
+		/*2 grey borders*/
+		linear-gradient(
+			transparent 8%, 
+			rgba(0, 0, 0, 0.1) 8%, 
+			rgba(0, 0, 0, 0.1) 14%, 
+			transparent 14%, 
+			transparent 86%, 
+			rgba(0, 0, 0, 0.1) 86%, 
+			rgba(0, 0, 0, 0.1) 92%, 
+			transparent 92%
+		), 
+		/*white gloss gradient*/
+		linear-gradient(
+			rgba(255, 255, 255, 0.75), 
+			rgba(255, 255, 255, 0) 
+		), 
+		/*thin stripes*/
+		linear-gradient(
+			45deg, 
+			transparent 40%, 
+			rgba(0, 0, 0, 0.1) 40%, 
+			rgba(0, 0, 0, 0.1) 60%, 
+			transparent 60%
+		), 
+		/*white base*/
+		linear-gradient(white, white); 
+	background-size: 
+		cover, /*borders*/
+		cover, /*white gloss*/
+		4px 4px, /*thin stripes*/
+		cover; /*base white*/
+}
+
+h3, h3:before, h3:after {
+	box-sizing: border-box;
+	/*Fix to make the borders appear on the ribbon ends also*/
+	background-origin: border-box;
 }
 
 p {
-	background:blue;
+	
+	display:inline-block;
+	vertical-align: middle;
+
 
 }
-
-
 .intro{
 	order:-2;
+	
 }
 
 
@@ -38,7 +331,7 @@ aside{
 }
 
 
-.page-wrapper {
+.page-wrapper{
 	display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -50,24 +343,28 @@ aside{
   
   font-weight: bold;
   text-align: center;
+
+
 }
 
 
-.page-wrapper > * {
-  padding: 10px;
-  flex: 1 auto;
+.preamble {
+	border:5px solid;
+	margin:10%;
+	
 }
-
-
-.preamble p{
-	flex:1 auto;
+.preamble p {
+ flex:1 auto;
 	width:300px;
 	display:inline-block;
 	vertical-align: text-top;
-	
+
 }
 
-.explanation p{
+	
+
+
+.explanation p {
 	flex:1 auto;
 	width:300px;
 	display:inline-block;
@@ -98,26 +395,31 @@ aside{
 	width:300px;
 	display:inline-block;
 	vertical-align: text-top;	
+	
 }
 
-.design-selection {
-	background: #3cddb9;
-	
-/* 	float:left; */
+
+
+
+
+.design-selection ul {
+	padding:5px;
 }
 .design-selection ul li {
 	list-style: none;
-/* 	float: left;  */
+	background:#80bfbe; 
+	background:rgba(128, 191, 190, 100)
+
 }
 .design-selection li {
-	flex:1 auto;
+	
 	width:100px;
 	height:100px;
 	display:inline-block;
 	vertical-align: middle;
 	border: 3px solid #fff;
-	margin:0;
-		-webkit-transform: rotate(-45deg);
+	 margin:0;
+	-webkit-transform: rotate(-45deg);
 	-moz-transform: rotate(-45deg);
 	-ms-transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
@@ -125,35 +427,199 @@ aside{
 
 
 }
+ .design-selection a::after {
+ content:"\000A";
+    white-space: pre;
 
+
+}
 
 
  .design-selection h3 {
 	 margin-bottom:25px;
  }
 
+.zen-resources ul{
+
+}
+
+.zen-resources li {
+	display:inline-block;
+	width:90px;
+	height:90px;
+	 vertical-align: text-top;
+	
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	border-radius: 200px 200px 200px 200px;
+	border:5px solid  #80bfbe;
+	padding:5px;
+		position: relative;
+ background: repeating-linear-gradient(
+  45deg,
+ #80bfbe,
+	#80bfbe,
+  #80bfbe 10px,
+  #dbb34e 10px,
+  #dbb34e 20px
+);
+
+
+}
+
+
+.zen-resources a{
+
+
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  
+
+
+}
+
+
+/* Media queries for  design-selection*/
+@media only screen and (min-width: 1300px) {
 .design-selection li {
-	margin-right:40px;
-	margin-bottom:45px;
-}
+	margin-right:35px;
 
-
-
-
-.design-selection li:nth-child(even){
-	background:orange;
-}
-
-
-.design-selection li:nth-child(odd){
-	background:pink;
-}
-@media only screen and (max-width: 500px) {
-.design-selection {
-	background:transparent;
 }	
+	}
+
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1299px) {
+
+	.design-selection ul{
+		width:1000px;
+		margin:auto;
+	}
+.design-selection  li:nth-child(n-6){
+
+
+	
+	margin-right:40px;
+}	
+
+	.design-selection  li:nth-child(7){
+	margin-top:-30px;
+	}
+.design-selection  li:nth-child(8){
+
+	margin-left:150px;
+	margin-top:-30px;
+
+}
+	
+	}
+
+@media only screen and (min-width: 500px) and (max-width: 999px) {
+	
+.design-selection ul{
+	width:500px;
+		margin:auto;
+}	
+.design-selection  li:nth-child(n-3){
+
+	margin-right:40px;
+}	
+
+.design-selection  li:nth-child(n+4):nth-child(-n+6){
+
+	margin-right:40px;
+	margin-top:45px;
+}	
+
+.design-selection  li:nth-child(n+7):nth-child(-n+8){
+
+
+
+	margin-right:40px;
+	margin-top:-280px;
+
+}	
+
+
 	
 }
-/* media queries above specifies for widest view 
-idea would be to rotate the text in whimsical ways
-*/
+
+@media only screen and (min-width: 400px) and (max-width: 499px) {
+.design-selection ul{
+	width:400px;
+	margin:auto;
+}
+.design-selection  li:nth-child(-n+2){
+
+
+	margin-right:40px;
+}	
+
+.design-selection  li:nth-child(3){
+
+
+
+	margin-left:110px;
+	margin-right:40px;
+	margin-top:-30px;
+
+}	
+	
+
+.design-selection  li:nth-child(4){
+
+	margin-top:-30px;
+}	
+	
+
+	
+.design-selection  li:nth-child(n+5):nth-child(-n+6){
+
+
+	margin-right:40px;
+	margin-top:-30px;
+}		
+	
+	
+.design-selection  li:nth-child(7){
+
+	margin-left:110px;
+	margin-right:40px;
+	margin-top:-30px;
+	
+}	
+	
+.design-selection  li:nth-child(8){
+
+
+	margin-top:-30px;
+	
+}		
+}
+	
+@media only screen and (max-width: 399px) {
+	.design-selection ul{
+		width:220px ;
+		margin:auto;
+	}
+.design-selection  li:nth-child(1){
+
+	margin-left:-5px;
+}		
+
+	.design-selection  li:nth-child(even){
+	margin-left:125px;
+	margin-top:-30px;
+
+}		
+.design-selection  li:nth-child(n+2):nth-child(odd){
+
+	margin-left:-5px;
+	margin-top:-30px;
+}		
+
+}
+	
