@@ -22,306 +22,241 @@ $color4: #80bfbe; //rgba(128, 191, 190, 100)
 $color5: #ffffe0; //rgba(255, 255, 224, 100)
 */
 /* basic elements */
+
+
+@import url(https://fonts.googleapis.com/css?family=Righteous|Sancreek);
+/* 
+font-family: 'Righteous', cursive;
+*/
+@-webkit-keyframes neonstop {
+	from {
+		text-shadow: 0 0 10px #fff,
+		0 0 20px #fff,
+		0 0 30px #fff,
+		0 0 40px #FF1177,
+		0 0 70px #FF1177,
+		0 0 80px #FF1177,
+		0 0 100px #FF1177,
+		0 0 150px #FF1177;	}
+	to {
+		text-shadow: 0 0 5px #fff,
+		0 0 10px #fff,
+		0 0 15px #fff,
+		0 0 20px #FF1177,
+		0 0 35px #FF1177,
+		0 0 40px #FF1177,
+		0 0 50px #FF1177,
+		0 0 75px #FF1177;	}
+}
+
+@-moz-keyframes neonstop {
+	from {
+		text-shadow: 0 0 10px #fff,
+		0 0 20px #fff,
+		0 0 30px #fff,
+		0 0 40px #FF1177,
+		0 0 70px #FF1177,
+		0 0 80px #FF1177,
+		0 0 100px #FF1177,
+		0 0 150px #FF1177;	}
+	to {
+		text-shadow: 0 0 5px #fff,
+		0 0 10px #fff,
+		0 0 15px #fff,
+		0 0 20px #FF1177,
+		0 0 35px #FF1177,
+		0 0 40px #FF1177,
+		0 0 50px #FF1177,
+		0 0 75px #FF1177;	}
+}
+
+@-o-keyframes neonstop {
+	from {
+		text-shadow: 0 0 10px #fff,
+		0 0 20px #fff,
+		0 0 30px #fff,
+		0 0 40px #FF1177,
+		0 0 70px #FF1177,
+		0 0 80px #FF1177,
+		0 0 100px #FF1177,
+		0 0 150px #FF1177;	}
+	to {
+		text-shadow: 0 0 5px #fff,
+		0 0 10px #fff,
+		0 0 15px #fff,
+		0 0 20px #FF1177,
+		0 0 35px #FF1177,
+		0 0 40px #FF1177,
+		0 0 50px #FF1177,
+		0 0 75px #FF1177;	}
+}
+
+@keyframes neonstop {
+	from {
+		text-shadow: 0 0 10px #fff,
+		0 0 20px #fff,
+		0 0 30px #fff,
+		0 0 40px #FF1177,
+		0 0 70px #FF1177,
+		0 0 80px #FF1177,
+		0 0 100px #FF1177,
+		0 0 150px #FF1177;	}
+	to {
+		text-shadow: 0 0 5px #fff,
+		0 0 10px #fff,
+		0 0 15px #fff,
+		0 0 20px #FF1177,
+		0 0 35px #FF1177,
+		0 0 40px #FF1177,
+		0 0 50px #FF1177,
+		0 0 75px #FF1177;	}
+}
+/* 
+font-family: 'Concert One', cursive;
+font-family: 'Sancreek', cursive;
+*/
 body {
-	width:auto;
+width:auto;
 	max-width:1300px;
-	background:#ffffe0;
+	background:#b2405a;
 	background: rgba(255, 255, 224, 100);
-	font-family: Rockwell;
-	border: 1px dashed #ddd;
-	box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ddd, 0 0 0 10px #fff, 0 0 2px 10px #eee;
-	color:#b2405a; 
-	color:rgba(178, 64, 90, 100);
+font-family: 'Rockewell';
+	color:#ffffe0;
+
+ 
+	rgba(255, 255, 224, 100);
 	margin:auto;
-	
-background:url("Purple.png");
+/* 	 Palette - coolors.co/6ba372-138e8c-136272-7f5d0e-7f0b2e */
+/* 
+$color1: #6ba372; //rgba(107, 163, 114, 100)
+$color2: #138e8c; //rgba(19, 142, 140, 100)
+$color3: #136272; //rgba(19, 98, 114, 100)
+$color4: #7f5d0e; //rgba(127, 93, 14, 100)
+$color5: #7f0b2e; //rgba(127, 11, 46, 100) */ 
+ background: 
+/*Red*/
+	 linear-gradient(to right top, rgba(242, 56, 90, 0) 0.48544em, #F2385A 0.48544em, #F2385A, #d00e31 1.31877em, rgba(242, 56, 90, 0) 1.31877em) 0 0,
+	 linear-gradient(to left top, rgba(242, 56, 90, 0) 0.48544em, #F2385A 0.48544em, #F2385A, #d00e31 1.31877em, rgba(242, 56, 90, 0) 1.31877em) 0 0,
+	 linear-gradient(to right bottom, rgba(242, 56, 90, 0) 0.48544em, #d00e31 0.48544em, #F2385A, #F2385A 1.31877em, rgba(242, 56, 90, 0) 1.31877em) 2.5em 0,
+	 linear-gradient(to left bottom, rgba(242, 56, 90, 0) 0.48544em, #d00e31 0.48544em, #F2385A, #F2385A 1.31877em, rgba(242, 56, 90, 0) 1.31877em) 2.5em 0,
+	 linear-gradient(to right top, rgba(245, 165, 3, 0) 0.48544em, #F5A503 0.48544em, #F5A503, #c38302 1.31877em, rgba(245, 165, 3, 0) 1.31877em) 0 1em,
+	 linear-gradient(to left top, rgba(245, 165, 3, 0) 0.48544em, #F5A503 0.48544em, #F5A503, #c38302 1.31877em, rgba(245, 165, 3, 0) 1.31877em) 0 1em,
+	 linear-gradient(to right bottom, rgba(245, 165, 3, 0) 0.48544em, #c38302 0.48544em, #F5A503, #F5A503 1.31877em, rgba(245, 165, 3, 0) 1.31877em) 2.5em 1em,
+	 linear-gradient(to left bottom, rgba(245, 165, 3, 0) 0.48544em, #c38302 0.48544em, #F5A503, #F5A503 1.31877em, rgba(245, 165, 3, 0) 1.31877em) 2.5em 1em,
+	 linear-gradient(to right top, rgba(233, 241, 223, 0) 0.48544em, #E9F1DF 0.48544em, #E9F1DF, #c4daaa 1.31877em, rgba(233, 241, 223, 0) 1.31877em) 0 2em,
+	 linear-gradient(to left top, rgba(233, 241, 223, 0) 0.48544em, #E9F1DF 0.48544em, #E9F1DF, #c4daaa 1.31877em, rgba(233, 241, 223, 0) 1.31877em) 0 2em,
+	 linear-gradient(to right bottom, rgba(233, 241, 223, 0) 0.48544em, #c4daaa 0.48544em, #E9F1DF, #E9F1DF 1.31877em, rgba(233, 241, 223, 0) 1.31877em) 2.5em 2em,
+	 linear-gradient(to left bottom, rgba(233, 241, 223, 0) 0.48544em, #c4daaa 0.48544em, #E9F1DF, #E9F1DF 1.31877em, rgba(233, 241, 223, 0) 1.31877em) 2.5em 2em,
+	 linear-gradient(to right top, rgba(74, 217, 217, 0) 0.48544em, #4AD9D9 0.48544em, #4AD9D9, #25b1b1 1.31877em, rgba(74, 217, 217, 0) 1.31877em) 0 3em,
+	 linear-gradient(to left top, rgba(74, 217, 217, 0) 0.48544em, #4AD9D9 0.48544em, #4AD9D9, #25b1b1 1.31877em, rgba(74, 217, 217, 0) 1.31877em) 0 3em,
+	 linear-gradient(to right bottom, rgba(74, 217, 217, 0) 0.48544em, #25b1b1 0.48544em, #4AD9D9, #4AD9D9 1.31877em, rgba(74, 217, 217, 0) 1.31877em) 2.5em 3em,
+	 linear-gradient(to left bottom, rgba(74, 217, 217, 0) 0.48544em, #25b1b1 0.48544em, #4AD9D9, #4AD9D9 1.31877em, rgba(74, 217, 217, 0) 1.31877em) 2.5em 3em,
+	 linear-gradient(to right top, rgba(54, 177, 191, 0) 0.48544em, #36B1BF 0.48544em, #36B1BF, #257a83 1.31877em, rgba(54, 177, 191, 0) 1.31877em) 0 4em,
+	 linear-gradient(to left top, rgba(54, 177, 191, 0) 0.48544em, #36B1BF 0.48544em, #36B1BF, #257a83 1.31877em, rgba(54, 177, 191, 0) 1.31877em) 0 4em,
+	 linear-gradient(to right bottom, rgba(54, 177, 191, 0) 0.48544em, #257a83 0.48544em, #36B1BF, #36B1BF 1.31877em, rgba(54, 177, 191, 0) 1.31877em) 2.5em 4em,
+	 linear-gradient(to left bottom, rgba(54, 177, 191, 0) 0.48544em, #257a83 0.48544em, #36B1BF, #36B1BF 1.31877em, rgba(54, 177, 191, 0) 1.31877em) 2.5em 4em;
+  background-color: linen;
+  background-size: 5em 5em;
 	z-index:-3;
-	background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; 
 }
+/* key frame animation for main and header and have it flicker */
+/* hover effect on h3 with different colors? */
+h1 {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+	font-size:500%;
+  padding: 10px;
+  border: none;
+	font-family: 'Sancreek', cursive;
+	margin:0;
 
-
-
-/*Header ribbon modified from: http://www.bypeople.com/css3-white-dashed-ribbon/  */
-h1{
-	display: inline-block;
-	font-size: 18px;
-	line-height: 28px;
-	width:60%;
-	color: #b2405a;
-	text-shadow: 0 0 1px #758890;
-	margin: 10px 0;
-	padding: 14px 30px;
-	position: relative;
+	text-transform:uppercase;
 	
-	/*A little shadow for 3d effect*/
-	/*Finally another shadow to negate some aspects of the :after element to complete the effect. This drops a shrinked shadow over the :after element with the same color like that of the background. The shadow is shrinked by the same offset amount = 18. And it is moved down by twice the offset amount to cover the entire height of the :after element*/
-	box-shadow: 
-		0 0 30px 0 rgba(0, 0, 0, 0.1), 
-		0 36px 0 -18px #ffffe0;
-}
-
-
-
-
-/*The ribbon ends*/
-h1:before {
-	content: '';
-	position: absolute;
-	top: 18px;
-	left: -15%;
-	z-index: -1;
-	width: 130%;
-	/*We will be using the triangle logic - 2 sided borders and 0 height. That will create negative triangles on the left and right*/
-	height: 0;
-	border: 28px solid rgba(0, 0, 0, 0);
-	border-left: 28px solid #ffffe0;
-	border-right: 28px solid #ffffe0;
-	/*Same color as the container which is the body in this case*/
-}
-
-/*The after pseudo element will negatve the bottom part of the ribbon completing the effect*/
-h1:after {
-	content: '';
-	width: 100%;
-	height: 0;
-	position: absolute;
-	top: 100%; left: 0;
-	z-index: -1;
-	/*The height of the top border is same as width of the left/right borders for the smoothest effect. The height of the top border is also the same as the offset the :before element has from the top*/
-	border-top: 18px solid #ffffe0;
-	border-left: 18px solid transparent;
-	border-right: 18px solid transparent;
-}
-
-h1, h1:before {
-	/*Some cool multi-background - we will use a combination of 4 backgrounds to create a cool effect*/
+  text-decoration: normal;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+	color: #80bfbe;
+  text-shadow: 
 	
-	background-image: 
-		/*yellow*/
-		
-		linear-gradient(
-			transparent 8%, 
-			yellow,
-			transparent 14%, 
-			transparent 86%, 
-			yellow,
-			transparent 92%
-		),
-	    
-		/*white base*/
-		linear-gradient(red,red);
-		
-		
-	background-size: 
-		cover, /*borders*/
-		cover, /*white gloss*/
-		4px 4px, /*thin stripes*/
-		cover; /*base white*/
+	0 0 5px rgba(255, 255, 255, 1),
+  0 0 10px rgba(255, 255, 255, 1),
+  0 0 15px rgba(255, 255, 255, 1),
+  0 0 20px #ff00de,
+  0 0 35px #ff00de,
+  0 0 40px #ff00de,
+  0 0 50px #ff00de;  
+	 -webkit-animation: neonstop 1.5s ease-in-out infinite alternate;
+  -moz-animation: neonstop 1.5s ease-in-out infinite alternate;
+  animation: neonstop 1.5s ease-in-out infinite alternate;
+}
+/*  
+$color1: #694c3f; //rgba(105, 76, 63, 100)
+
+$color2: #b2405a; //rgba(178, 64, 90, 100)
+
+$color3: #dbb34e; //rgba(219, 179, 78, 100)
+
+$color4: #80bfbe; //rgba(128, 191, 190, 100)
+
+$color5: #ffffe0; //rgba(255, 255, 224, 100)
+*/
+h1:hover {
+  color: #80bfbe;
+	 text-shadow: 
+	1px 1px 5px rgba(0, 0, 0, 1);
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
 }
 
-h1, h1:before, h1:after {
-	box-sizing: border-box;
-	/*Fix to make the borders appear on the ribbon ends also*/
-	background-origin: border-box;
+h2 {
+   color: #80bfbe;
+	 text-shadow: 
+	1px 1px 5px rgba(0, 0, 0, 1),
+	2px 2px 5px rgba(0, 0, 0, 1),
+	3px 3px 5px rgba(0, 0, 0, 1);
+	font-size:300%;
+	font-family: 'Sancreek', cursive;
+	background: rgba(255, 255, 224, .25);
+	margin:0;
 }
 
-
-
-/*Header ribbon modified from: http://www.bypeople.com/css3-white-dashed-ribbon/  */
-h2{
-	display: inline-block;
-	font-size: 18px;
-	line-height: 28px;
-	color: #b2405a;
-	text-shadow: 0 0 1px #758890;
-	margin: 10px 0;
-
-	padding: 14px 30px;
-	position: relative;
+h3 {
+	font-family: 'Sancreek', cursive;
+	color: #80bfbe;	 
 	
-	/*A little shadow for 3d effect*/
-	/*Finally another shadow to negate some aspects of the :after element to complete the effect. This drops a shrinked shadow over the :after element with the same color like that of the background. The shadow is shrinked by the same offset amount = 18. And it is moved down by twice the offset amount to cover the entire height of the :after element*/
-	box-shadow: 
-		0 0 30px 0 rgba(0, 0, 0, 0.1), 
-		0 36px 0 -18px #ffffe0;
-}
-
-
-
-
-/*The ribbon ends*/
-h2:before {
-	content: '';
-	position: absolute;
-	top: 18px;
-	left: -15%;
-	z-index: -1;
-	width: 130%;
-	/*We will be using the triangle logic - 2 sided borders and 0 height. That will create negative triangles on the left and right*/
-	height: 0;
-	border: 28px solid rgba(0, 0, 0, 0);
-	border-left: 28px solid #ffffe0;
-	border-right: 28px solid #ffffe0;
-	/*Same color as the container which is the body in this case*/
-}
-
-/*The after pseudo element will negatve the bottom part of the ribbon completing the effect*/
-h2:after {
-	content: '';
-	width: 100%;
-	height: 0;
-	position: absolute;
-	top: 100%; left: 0;
-	z-index: -1;
-	/*The height of the top border is same as width of the left/right borders for the smoothest effect. The height of the top border is also the same as the offset the :before element has from the top*/
-	border-top: 18px solid #ffffe0;
-	border-left: 18px solid transparent;
-	border-right: 18px solid transparent;
-}
-
-h2, h2:before {
-	/*Some cool multi-background - we will use a combination of 4 backgrounds to create a cool effect*/
-	background-image: 
-		/*2 grey borders*/
-		linear-gradient(
-			transparent 8%, 
-			rgba(0, 0, 0, 0.1) 8%, 
-			rgba(0, 0, 0, 0.1) 14%, 
-			transparent 14%, 
-			transparent 86%, 
-			rgba(0, 0, 0, 0.1) 86%, 
-			rgba(0, 0, 0, 0.1) 92%, 
-			transparent 92%
-		), 
-		/*white gloss gradient*/
-		linear-gradient(
-			rgba(255, 255, 255, 0.75), 
-			rgba(255, 255, 255, 0) 
-		), 
-		/*thin stripes*/
-		linear-gradient(
-			45deg, 
-			transparent 40%, 
-			rgba(0, 0, 0, 0.1) 40%, 
-			rgba(0, 0, 0, 0.1) 60%, 
-			transparent 60%
-		), 
-		/*white base*/
-		linear-gradient(white, white); 
-	background-size: 
-		cover, /*borders*/
-		cover, /*white gloss*/
-		4px 4px, /*thin stripes*/
-		cover; /*base white*/
-}
-
-h2, h2:before, h2:after {
-	box-sizing: border-box;
-	/*Fix to make the borders appear on the ribbon ends also*/
-	background-origin: border-box;
-}
-
-h3{
-	display: inline-block;
-	font-size: 18px;
-	line-height: 28px;
-	color: #b2405a;
-	text-shadow: 0 0 1px #758890;
-	margin: 10px 0;
-	width:80%;
-	padding: 14px 30px;
-	position: relative;
+	text-shadow: 
 	
-	/*A little shadow for 3d effect*/
-	/*Finally another shadow to negate some aspects of the :after element to complete the effect. This drops a shrinked shadow over the :after element with the same color like that of the background. The shadow is shrinked by the same offset amount = 18. And it is moved down by twice the offset amount to cover the entire height of the :after element*/
-	box-shadow: 
-		0 0 30px 0 rgba(0, 0, 0, 0.1), 
-		0 36px 0 -18px #ffffe0;
+	0 0 5px rgba(255, 255, 255, .5),
+  0 0 10px rgba(255, 255, 255, .5),
+  0 0 15px rgba(255, 255, 255, .5);
+	background: 
+		repeating-linear-gradient(
+			to right,
+		rgba(50, 0, 0,1),	
+		rgba(50, 0, 0,1) 3%,
+		rgba(50, 0, 0,.5) 4%,	
+		rgba(50, 0, 0,.5) 96%,
+		rgba(50, 0, 0,1) 97%,
+		rgba(50, 0, 0,1) 100%)	;
+-webkit-clip-path: polygon(0 100%, 2% 55%, 0 10%, 3% 10%, 3% 0, 97% 0, 97% 10%, 100% 10%, 98% 55%, 100% 100%, 96% 100%, 96% 90%, 4% 90%, 4% 100%);
+clip-path: polygon(0 100%, 2% 55%, 0 10%, 3% 10%, 3% 0, 97% 0, 97% 10%, 100% 10%, 98% 55%, 100% 100%, 96% 100%, 96% 90%, 4% 90%, 4% 100%);
+font-size:250%;
 	
-}	
+	padding-bottom:10px;
 
-h3:before {
-	content: '';
-	position: absolute;
-	top: 18px;
-	left: -10%;
-	z-index: -1;
-	width: 120%;
-	/*We will be using the triangle logic - 2 sided borders and 0 height. That will create negative triangles on the left and right*/
-	height: 0;
-	border: 28px solid rgba(0, 0, 0, 0);
-	border-left: 28px solid #ffffe0;
-	border-right: 28px solid #ffffe0;
-	/*Same color as the container which is the body in this case*/
-}
-
-h3:after {
-	content: '';
-	width: 100%;
-	height: 0;
-	position: absolute;
-	top: 100%; left: 0;
-	z-index: -1;
-	/*The height of the top border is same as width of the left/right borders for the smoothest effect. The height of the top border is also the same as the offset the :before element has from the top*/
-	border-top: 18px solid #ffffe0;
-	border-left: 18px solid transparent;
-	border-right: 18px solid transparent;
-}
-
-h3, h3:before {
-	/*Some cool multi-background - we will use a combination of 4 backgrounds to create a cool effect*/
-	background-image: 
-		/*2 grey borders*/
-		linear-gradient(
-			transparent 8%, 
-			rgba(0, 0, 0, 0.1) 8%, 
-			rgba(0, 0, 0, 0.1) 14%, 
-			transparent 14%, 
-			transparent 86%, 
-			rgba(0, 0, 0, 0.1) 86%, 
-			rgba(0, 0, 0, 0.1) 92%, 
-			transparent 92%
-		), 
-		/*white gloss gradient*/
-		linear-gradient(
-			rgba(255, 255, 255, 0.75), 
-			rgba(255, 255, 255, 0) 
-		), 
-		/*thin stripes*/
-		linear-gradient(
-			45deg, 
-			transparent 40%, 
-			rgba(0, 0, 0, 0.1) 40%, 
-			rgba(0, 0, 0, 0.1) 60%, 
-			transparent 60%
-		), 
-		/*white base*/
-		linear-gradient(white, white); 
-	background-size: 
-		cover, /*borders*/
-		cover, /*white gloss*/
-		4px 4px, /*thin stripes*/
-		cover; /*base white*/
-}
-
-h3, h3:before, h3:after {
-	box-sizing: border-box;
-	/*Fix to make the borders appear on the ribbon ends also*/
-	background-origin: border-box;
-}
-
-p {
 	
-	display:inline-block;
-	vertical-align: middle;
-
-
 }
+
+
 .intro{
 	order:-2;
-	
+	height:auto;
+
 }
 
 
@@ -337,70 +272,159 @@ aside{
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;  
-  
   -webkit-flex-flow: row wrap;
   flex-flow: column wrap;
-  
   font-weight: bold;
   text-align: center;
-
-
 }
+.summary p{
+ 
 
+	padding-left:3%;
+	padding-right:3%;
+	
+ 	background:  radial-gradient(
+      circle at 50% 0, 
+	 		rgba(50, 0, 0,1),
+  		rgba(50,0,0,.60) ); 
+ 
+-webkit-clip-path: polygon(97% 0, 100% 50%, 97% 100%, 3% 100%, 0 50%, 3% 0);
+clip-path: polygon(97% 0, 100% 50%, 97% 100%, 3% 100%, 0 50%, 3% 0);
+	
+}
 
 .preamble {
-	border:5px solid;
-	margin:10%;
-	
-}
-.preamble p {
- flex:1 auto;
-	width:300px;
-	display:inline-block;
-	vertical-align: text-top;
+margin:5%;
+	color:#ffffe0; 
 
 }
 
-	
 
-
-.explanation p {
+.preamble p{
 	flex:1 auto;
-	width:300px;
-	display:inline-block;
-	vertical-align: text-top;
-
-}
-
-.participation p {
-	flex:1 auto;
-	width:300px;
-	display:inline-block;
-	vertical-align: text-top;
-	
-}
-
-
-.benefits p {
-	flex:1 auto;
-	width:300px;
-	display:inline-block;
-	vertical-align: text-top;
-	
-}
-
-
-.requirements p {
-	flex:1 auto;
-	width:300px;
+	width:200px;
 	display:inline-block;
 	vertical-align: text-top;	
 	
+	padding:5%;
+
+	padding-bottom:10%;
+ 	background:  radial-gradient(
+      circle at 50% 0, 
+	 		rgba(50, 0, 0,1),
+  		rgba(50,0,0,.60) ); 
+	border-top-left-radius:5%;
+	border-top-right-radius:5%;
+-webkit-clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+
+}
+
+	
+.explanation {
+
+	 margin:5%;
+	color:#ffffe0; 
+
+}
+
+.explanation p {
+	flex:1 auto;
+	width:200px;
+	display:inline-block;
+	vertical-align: text-top;	
+	
+	padding:5%;
+	padding-bottom:10%;
+	background:black;
+	border-top-left-radius:10%;
+	border-top-right-radius:10%;
+		-webkit-clip-path: polygon(100% 0, 100% 90%, 77% 100%, 50% 90%, 25% 100%, 0 90%, 0 0);
+	-clip-path: polygon(100% 0, 100% 90%, 77% 100%, 50% 90%, 25% 100%, 0 90%, 0 0);
+	 	background:  radial-gradient(
+      circle at 50% 0, 
+	 		rgba(50, 0, 0,1),
+  		rgba(50,0,0,.60) ); 
 }
 
 
 
+.participation {
+  margin:5%;
+	color:#ffffe0; 
+}
 
+	
+
+.participation p {
+		flex:1 auto;
+	width:200px;
+	display:inline-block;
+	vertical-align: text-top;	
+	
+	padding:5%;
+	padding-bottom:10%;
+
+	border-top-left-radius:10%;
+	border-top-right-radius:10%;
+	-webkit-clip-path: polygon(100% 0, 100% 85%, 85% 100%, 70% 85%, 50% 100%, 30% 85%, 15% 100%, 0 85%, 0 0);
+	clip-path: polygon(100% 0, 100% 85%, 85% 100%, 70% 85%, 50% 100%, 30% 85%, 15% 100%, 0 85%, 0 0);
+	 
+	background:  radial-gradient(
+      circle at 50% 0, 
+	 		rgba(50, 0, 0,1),
+  		rgba(50,0,0,.60) ); 
+}
+
+
+}
+
+.benefits {
+ margin:5%;
+
+	color:#ffffe0; 
+}
+.benefits p {
+flex:1 auto;
+	width:200px;
+	display:inline-block;
+	vertical-align: text-top;	
+	padding:5%;
+	padding-bottom:10%;
+
+	border-top-left-radius:10%;
+	border-top-right-radius:10%;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 80% 100%, 70% 90%, 60% 100%, 50% 90%, 40% 100%, 30% 90%, 20% 100%, 0 85%);
+clip-path: polygon(0 0, 100% 0, 100% 85%, 80% 100%, 70% 90%, 60% 100%, 50% 90%, 40% 100%, 30% 90%, 20% 100%, 0 85%);
+	background:  radial-gradient(
+      circle at 50% 0, 
+	 		rgba(50, 0, 0,1),
+  		rgba(50,0,0,.60) ); 
+
+}
+
+.requirements {
+	margin:5%;
+	color:#ffffe0; 
+}
+.requirements p {
+	flex:1 auto;
+	width:200px;
+	display:inline-block;
+	vertical-align: text-top;	
+	
+	padding:5%;
+	padding-bottom:10%;
+
+	border-top-left-radius:10%;
+	border-top-right-radius:10%;
+-webkit-clip-path: polygon(0 95%, 0 0, 100% 0, 100% 95%, 90% 100%, 80% 95%, 70% 100%, 59% 95%, 50% 100%, 40% 95%, 30% 100%, 20% 95%, 10% 100%);
+clip-path: polygon(0 95%, 0 0, 100% 0, 100% 95%, 90% 100%, 80% 95%, 70% 100%, 59% 95%, 50% 100%, 40% 95%, 30% 100%, 20% 95%, 10% 100%);
+	background:  radial-gradient(
+      circle at 50% 0, 
+	 		rgba(50, 0, 0,1),
+  		rgba(50,0,0,.60) ); 
+}
 
 .design-selection ul {
 	padding:5px;
@@ -427,12 +451,7 @@ aside{
 
 
 }
- .design-selection a::after {
- content:"\000A";
-    white-space: pre;
 
-
-}
 
 
  .design-selection h3 {
@@ -475,13 +494,69 @@ position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
-  
+ }
 
+.design-archives li {
+  display: inline;
+	padding-right:10px;
+	padding-left:10px;
+	font-size:200%;
 
+  border: none;
+	font-family: 'Sancreek', cursive;
+	margin:0;
+
+	text-transform:uppercase;
+	color: #80bfbe;
+ 
+  text-align: center;
+ 
+	text-shadow: 
+	
+	0 0 5px rgba(255, 255, 255, 1),
+  0 0 10px rgba(255, 255, 255, 1),
+  0 0 15px rgba(255, 255, 255, 1),
+  0 0 20px #ff00de,
+  0 0 35px #ff00de,
+  0 0 40px #ff00de,
+  0 0 50px #ff00de;  
+	 -webkit-animation: neonstop 1.5s ease-in-out infinite alternate;
+  -moz-animation: neonstop 1.5s ease-in-out infinite alternate;
+  animation: neonstop 1.5s ease-in-out infinite alternate;
 }
 
 
+footer a {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+	font-size:200%;
+  padding: 10px;
+  border: none;
+	font-family: 'Sancreek', cursive;
+	margin:0;
+
+	text-transform:uppercase;
+	color: #80bfbe;
+  text-decoration: normal;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+  text-shadow: 
+	
+	0 0 5px rgba(255, 255, 255, 1),
+  0 0 10px rgba(255, 255, 255, 1),
+  0 0 15px rgba(255, 255, 255, 1),
+  0 0 20px #ff00de,
+  0 0 35px #ff00de,
+  0 0 40px #ff00de,
+  0 0 50px #ff00de;  
+	 -webkit-animation: neonstop 1.5s ease-in-out infinite alternate;
+  -moz-animation: neonstop 1.5s ease-in-out infinite alternate;
+  animation: neonstop 1.5s ease-in-out infinite alternate;
+}
 /* Media queries for  design-selection*/
 @media only screen and (min-width: 1300px) {
 .design-selection li {
